@@ -2,6 +2,7 @@ package no.hvl.dat250.jpa.tutorial.creditcards;
 
 import java.util.Collection;
 import jakarta.persistence.*;
+import java.util.ArrayList;
 
 @Entity
 public class Customer {
@@ -15,7 +16,7 @@ public class Customer {
     private Collection<Address> addresses;
 
     @ManyToMany
-    private Collection<CreditCard> creditCards;
+    private Collection<CreditCard> creditCards = new ArrayList<>();
  
     public String getName() {
         return name;

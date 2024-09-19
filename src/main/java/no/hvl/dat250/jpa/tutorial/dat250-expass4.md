@@ -9,6 +9,7 @@ see files
 : The questions are kinda ambigious
 ### Q1: 
 wdym how/when?
+TODO ⚠️ ------------------------
 
 ### Q2:
 Creating a table matching that of customer

@@ -1,5 +1,6 @@
 package no.hvl.dat250.jpa.tutorial.creditcards;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import jakarta.persistence.*;
 
@@ -10,7 +11,7 @@ public class Address {
     private Long id;
 
     @ManyToMany(mappedBy = "addresses")
-    private Collection<Customer> residents;
+    private Collection<Customer> residents = new ArrayList<>();
 
     private String street;
     private Integer number;

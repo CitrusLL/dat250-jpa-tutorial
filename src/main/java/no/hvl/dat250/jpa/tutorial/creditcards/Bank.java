@@ -1,5 +1,6 @@
 package no.hvl.dat250.jpa.tutorial.creditcards;
 
+import java.util.ArrayList;
 import jakarta.persistence.*;
 import java.util.Collection;
 
@@ -10,7 +11,7 @@ public class Bank {
     private Long id;
 
     @OneToMany(mappedBy = "bank")
-    private Collection<CreditCard> ownedCards;
+    private Collection<CreditCard> ownedCards = new ArrayList<>();
 
     private String name;
 
