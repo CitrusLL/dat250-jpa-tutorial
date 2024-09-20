@@ -6,9 +6,10 @@ I think it all worked as intended
 ## Exp. 2 - Establish relationships
 see files
 
-: The questions are kinda ambigious
 ### Q1: 
 Runs with the h2 database engine.
+
+I don't really know what else to say.. Kinda ambigious question
 
 ### Q2:
 Creating a table matching that of customer
