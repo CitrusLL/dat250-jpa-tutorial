@@ -1,6 +1,8 @@
 package no.hvl.dat250.jpa.tutorial.creditcards;
 
 import java.util.Collection;
+import java.util.HashSet;
+
 import jakarta.persistence.*;
 import java.util.ArrayList;
 
@@ -13,10 +15,10 @@ public class Customer {
     private String name;
 
     @ManyToMany(cascade = CascadeType.PERSIST)
-    private Collection<Address> addresses = new ArrayList<>();
+    private Collection<Address> addresses = new HashSet<>();
 
     @ManyToMany
-    private Collection<CreditCard> creditCards = new ArrayList<>();
+    private Collection<CreditCard> creditCards = new HashSet<>();
  
     public String getName() {
         return name;
@@ -42,4 +44,5 @@ public class Customer {
     public void addCreditCard(CreditCard card){
         this.creditCards.add(card);
     }
+
 }

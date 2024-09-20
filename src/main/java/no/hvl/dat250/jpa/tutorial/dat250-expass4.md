@@ -8,8 +8,7 @@ see files
 
 : The questions are kinda ambigious
 ### Q1: 
-wdym how/when?
-TODO ⚠️ ------------------------
+Runs with the h2 database engine.
 
 ### Q2:
 Creating a table matching that of customer
@@ -56,8 +55,6 @@ But i expected that you had to explicitly define primary and foreign keys within
 There were also a lot of hibernate expressions with something about constraints and foregin keys.
 
 Output is at the bottom of the file
-
-The execution would also fail because of some TODO refferances in main. 
 
 ## Other
 Code:

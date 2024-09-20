@@ -1,5 +1,7 @@
 package no.hvl.dat250.jpa.tutorial.creditcards.driver;
 
+import java.util.Set;
+
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
@@ -35,6 +37,10 @@ public class CreditCardsMain {
     max.addAddress(address);
     address.addOwner(max);
 
+    System.out.println("Addr owners:");
+    System.out.println(address.getOwners());
+    System.out.println(Set.of(max));
+
     CreditCard c1 = new CreditCard();
     c1.setNumber(12345);
     c1.setBalance(-5000);
@@ -43,6 +49,9 @@ public class CreditCardsMain {
     c2.setNumber(123);
     c2.setBalance(1);
     c2.setCreditLimit(2000);
+
+    max.addCreditCard(c1);
+    max.addCreditCard(c2);
 
     Pincode pin = new Pincode();
     pin.setCode("123");
