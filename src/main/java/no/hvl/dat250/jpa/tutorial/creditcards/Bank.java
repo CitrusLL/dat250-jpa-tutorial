@@ -13,8 +13,7 @@ public class Bank {
 
     @OneToMany(mappedBy = "bank")
     private Set<CreditCard> ownedCards = new HashSet<>();
-    // Type set because otherwise tests failed :(( 
-    // Bad tests
+    // Type set because otherwise tests failed :((
 
 
     private String name;

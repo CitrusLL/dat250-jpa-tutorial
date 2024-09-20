@@ -61,8 +61,14 @@ Output is at the bottom of the file
 Code:
 https://github.com/CitrusLL/dat250-jpa-tutorial/tree/master/src/main/java/no/hvl/dat250/jpa/tutorial/creditcards 
 
-Outstanding stuff:
-I don't really know what to do with Main..
+### Outstanding stuff:
+Honestly this looks all good to me for once. Main i don't really know what to do with, just executed the credit card main method.
+
+Not happy with how i had to make the Collection type into Set to pass the tests. But whatever
+
+### Technical issues 
+
+I spent way to much time trying to pass the tests matching collections against Set.on(). Would allways fail if i returned a collection. Had to change all the relevant collections into sets.
 
 Terminal Output:
 ```

@@ -15,7 +15,6 @@ public class Address {
     @ManyToMany(mappedBy = "addresses")
     private Set<Customer> residents = new HashSet<>();
     // Type set because otherwise tests failed :(( 
-    // Bad tests
 
     private String street;
     private Integer number;
