@@ -14,4 +14,4 @@ jobs:
           java-version: '21'
           distribution: 'adopt'
       - name: Test experiment 2
-        run: ./gradlew test --scan
+        run: ./gradlew test
