@@ -33,6 +33,7 @@ public class CreditCardsMain {
     address.setNumber(28);
 
     max.addAddress(address);
+    address.addOwner(max);
 
     CreditCard c1 = new CreditCard();
     c1.setNumber(12345);
@@ -54,6 +55,9 @@ public class CreditCardsMain {
     bank.setName("Pengebank");
     bank.addCreditCard(c1);
     bank.addCreditCard(c2);
+
+    c1.setOwningBank(bank);
+    c2.setOwningBank(bank);
 
     // Persist the objects
     em.persist(max);

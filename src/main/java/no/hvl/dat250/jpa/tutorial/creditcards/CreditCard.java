@@ -60,6 +60,5 @@ public class CreditCard {
 
     public void setOwningBank(Bank bank) {
         this.bank = bank;
-        bank.addCreditCard(this);
     }
 }

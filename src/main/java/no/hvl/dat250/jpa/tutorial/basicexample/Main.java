@@ -6,12 +6,16 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 import jakarta.persistence.Query;
+import no.hvl.dat250.jpa.tutorial.creditcards.driver.CreditCardsMain;
 
 public class Main {
 
 
   public static void main(String[] args) {
 
+    CreditCardsMain.main(args);
+
+    /* 
     try (
             EntityManagerFactory factory = Persistence.createEntityManagerFactory("jpa-tutorial");
             EntityManager em = factory.createEntityManager()) {
@@ -27,7 +31,9 @@ public class Main {
       em.getTransaction().commit();
 
       readAndPrintTodos(em);
+      
     }
+    */
   }
 
   @SuppressWarnings("unchecked")

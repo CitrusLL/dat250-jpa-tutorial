@@ -38,6 +38,5 @@ public class Address {
 
     public void addOwner(Customer resident) {
         this.residents.add(resident);
-        resident.addAddress(this);
     }
 }

@@ -34,6 +34,5 @@ public class Bank {
     // Adder for ownedCards
     public void addCreditCard(CreditCard creditCard) {
         ownedCards.add(creditCard);
-        creditCard.setOwningBank(this);
     }
 }

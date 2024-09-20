@@ -13,7 +13,7 @@ public class Customer {
     private String name;
 
     @ManyToMany(cascade = CascadeType.PERSIST)
-    private Collection<Address> addresses;
+    private Collection<Address> addresses = new ArrayList<>();
 
     @ManyToMany
     private Collection<CreditCard> creditCards = new ArrayList<>();
@@ -33,7 +33,6 @@ public class Customer {
     
     public void addAddress(Address address) {
         this.addresses.add(address);
-        address.addOwner(this);
     }
 
     public void setName(String name) {
